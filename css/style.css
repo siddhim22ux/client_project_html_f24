@@ -86,6 +86,11 @@ header {
 .nav-list a:hover {
   color: #D86018;
 }
+.nav-menu li a.active {
+    background-color: #FFCB05;
+    text-decoration: underline;
+
+}
 
 /* Main content styles */
 main {
