@@ -4,30 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Form</title>
-    <link rel="stylesheet" href="css/style.css" />
-
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Counseling and Psychological Services</title>
 </head>
 
 <body>
+    <header>
+        <div class="skip"><a href="#main-content">Skip to Main Content</a></div>
+        <br>
+        <img class=logo src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <nav class="nav">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="maize_and_blue_cupboard.html">Maize & Blue Cupboard</a></li>
+                <li><a href="umsi_tutoring_and_academic_support.html">UMSI Tutoring & Academic Support</a></li>
+                <li><a href="counseling_and_psychological_services.html">Counseling & Pyschological Services</a></li>
+                <li><a class = "active" href="contact_me.html">Contact Me</a></li>
+            </ul>
+        </nav>
+        <br>
+        <h1>Contact Me</h1>
+    </header>
 
-    <form action="https://formspree.io/f/xzzbdnzw" method="POST">
-        <fieldset>
-            <legend>Feedback
+    <main class = "grid-container" id = "main-content">
+        <div class = "grid-item">
+            <h2>Do you have any feedback?</h2>
+            <!-- blurb revised and improved by chatgpt for clarity -->
+            <p>I'd love to hear your thoughts! Please fill out the form below if you found this resource helpful or if you have suggestions for new resources to include.</p>
+            <!-- form code from work in discussion section -->
+            <!-- <form action="" method="post"> Connect to formspree.io-->
+            <form action="https://formspree.io/f/mldegqga" method="POST">
+                <fieldset>
+                    <legend>Feedback Form</legend>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" placeholder="Jane" required>
 
-            <label for="first-name">First Name:</label>
-            <input type="text" placeholder="Enter your name here" id="first-name" name="name" required>
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Doe" required>
 
-            <label for="last-name">Last Name:</label>
-            <input type="text" placeholder="Enter your last name here" id="last-name" name="last-name" required>
+                    <label for="email">Email Address:</label>
+                    <input type="text" id="email" name="email" placeholder="janedoe@umich.edu" required>
 
-            <label for="program">Program: </label>
-            <input type="text" id="program" name="program" placeholder="Enter your program name">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
 
-            <input type="submit" value="Submit">
-        </legend>
-        </fieldset>
-    </form>
+                    <label for="message">Leave A Message</label>
+                    <textarea id="message" name="message"></textarea>
+
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <img class=logo src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <p><a href="index.html">Student Success Portal </a></p>
+        <p><a href="maize_and_blue_cupboard.html">Maize & Blue Cupboard </a></p>
+        <p><a href="umsi_tutoring_and_academic_support.html">UMSI Tutoring & Academic Support </a></p>
+        <p><a href="counseling_and_psychological_services.html">Counseling & Psychological Services </a></p>
+        <p><a href="contact_me.html">Contact Me</a></p>
+        <p>Copyright <img class=copyright src="images/copyright_white.png" alt="Copyright Symbol"> <span
+                id="year"></span> Anna Kim</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+
 </body>
 
 </html>
